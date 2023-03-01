@@ -1,0 +1,179 @@
+---
+draft: false
+title: "Robi brett 2"
+snippet: ""
+image: {
+src: "/robi.png",
+alt: "data structures & algorithms"
+}
+publishDate: "2022-11-09 16:39"
+category: "Courses"
+author: "Merethe"
+tags: [lett]
+---
+
+Dette er brett nummer to
+
+import {Section} from '../../react-components/Section.tsx';
+
+<Section section="sc-clock" data={{
+  "audioTTS": {},
+  "enableValidation": true,
+  "clockItems": [
+    {
+      "id": "5111",
+      "clockType": "Analog",
+      "clockShape": "Round",
+      "clockTheme": "BlueFrame",
+      "startTime": {
+        "hours": 12,
+        "minutes": 12
+      },
+      "editable": true,
+      "inputField": false,
+      "title": "Kalimdor"
+    },
+    {
+      "id": "4111",
+      "clockType": "Digital",
+      "clockShape": "Square",
+      "clockTheme": "BlueFrame",
+      "startTime": {
+        "hours": 6,
+        "minutes": 34
+      },
+      "editable": true,
+      "inputField": false,
+      "title": "Eastern Kingdoms"
+    }
+  ]
+}} client:load />
+
+
+<Section section="sc-choice" data={{
+  "enableValidation": true,
+  "variant": "multipleSimple",
+  "disableSelection": false,
+  "answers": [
+    {
+      "text": "Pippilotta Viktualia Rullgardina Chrysmynta Efraimsdatter Langstrømpe",
+
+    },
+    {
+      "text": "Marie Curie"
+    },
+    {
+      "text": "Napoleon"
+    },
+    {
+      "text": "Nikola Tesla"
+    }
+  ]
+}} client:load />
+
+<Section section={"sc-robi"} data={{
+  "theme": "forest",
+  "backgroundColor": "lightgreen",
+  "background": [
+    [
+      "6",
+      "6",
+      "1",
+      "1"
+    ],
+    [
+      "0",
+      "6",
+      "6",
+      "6"
+    ],
+    [
+      "0",
+      "7",
+      "6",
+      "6"
+    ]
+  ],
+  "obstacles": [
+    [
+      " ",
+      "p",
+      " ",
+      "x"
+    ],
+    [
+      " ",
+      " ",
+      "1",
+      " "
+    ],
+    [
+      "a",
+      " ",
+      " ",
+      "o"
+    ]
+  ],
+  "availableInstructionTypes": [
+    "Up",
+    "Down",
+    "Left",
+    "Right",
+    "Function",
+    "FunctionPointer",
+    "Condition",
+    "For"
+  ],
+  "pickups": [
+    "1"
+  ],
+  "pickupTypes": [
+    "can"
+  ],
+  "mode": "icon",
+  "memorySlots": 5,
+  "random": false,
+  "solutions": [
+    {
+      "instructions": [
+        {
+          "id": "1",
+          "type": "Down",
+          "data": {
+            "type": "Down"
+          }
+        },
+        {
+          "id": "2",
+          "type": "Right",
+          "data": {
+            "type": "Right"
+          }
+        },
+        {
+          "id": "3",
+          "type": "Up",
+          "data": {
+            "type": "Up"
+          }
+        },
+        {
+          "id": "4",
+          "type": "Right",
+          "data": {
+            "type": "Right"
+          }
+        },
+        {
+          "id": "5",
+          "type": "Empty",
+          "data": {
+            "type": "Empty"
+          }
+        }
+      ],
+      "functions": [],
+      "hasFinished": true
+    }
+  ]
+}}  client:idle />
