@@ -7,12 +7,12 @@ import { Icon } from "astro-icon";
 
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
+  <div style="max-width: 200px" class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
       alt="Astronaut in the air"
-      widths={[200, 400, 600]}
-      aspectRatio="4:3"
+      widths={[100, 400, 600]}
+      aspectRatio="contain"
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
@@ -20,34 +20,30 @@ import { Icon } from "astro-icon";
   </div>
   <div>
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tight">
+      Lær kode, spill Robi
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
+      Robi er bygd av ekte utviklere, slik at du kan starte å lære deg koding.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
+        href="/blog"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
+        <Icon class="text-white w-5 h-5" name="bx:bxs-rocket" />
 
-        Download for Free
+        Start å spille
       </Link>
       <Link
         size="lg"
         style="outline"
         rel="noopener"
-        href="https://github.com/surjithctly/astroship"
+        href="/blog"
         class="flex gap-1 items-center justify-center"
         target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
+        <Icon class="text-black w-4 h-4" name="bx:bxs-dog" />
+        Utforsk brettene
       </Link>
     </div>
   </div>

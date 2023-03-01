@@ -19,9 +19,9 @@ publishedBlogEntries.sort(function (a, b) {
 <Layout title="Blog">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Our Blog</Fragment>
+      <Fragment slot="title">Brettene</Fragment>
       <Fragment slot="desc">
-        We write about building startups and thoughts going on our mind.
+        Vi lager nye spennende brett hele tiden så følg med
       </Fragment>
     </Sectionhead>
     <main class="mt-16">
@@ -38,31 +38,22 @@ publishedBlogEntries.sort(function (a, b) {
                     widths={[200, 400, 800]}
                     aspectRatio="16:9"
                     background="#ffffff"
-                    fit="cover"
+                    fit="contain"
                     position="center"
                     loading={index <= 2 ? "eager" : "lazy"}
                     decoding={index <= 2 ? "sync" : "async"}
                     class="w-full rounded-md"
                   />
                   <div>
-                    <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
-                      {blogPostEntry.data.category}
-                    </span>
 
                     <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">
                       {blogPostEntry.data.title}
                     </h2>
 
                     <div class="flex gap-2 mt-3">
-                      <span class="text-gray-400">
-                        {blogPostEntry.data.author}
-                      </span>
-                      <span class="text-gray-400">• </span>
-                      <time
-                        class="text-gray-400"
-                        datetime={blogPostEntry.data.publishDate.toISOString()}>
-                        {blogPostEntry.data.publishDate.toDateString()}
-                      </time>
+
+
+
                     </div>
                   </div>
                 </div>
